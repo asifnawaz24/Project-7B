@@ -22,7 +22,7 @@ jobs:
         cmd: install
       
     - name: Install surge
-      run: sudo yarn global surge
+      run: sudo yarn global add surge
                   
     - name: Build React App
       run: yarn build
