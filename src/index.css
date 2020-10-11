@@ -1,13 +1,25 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --main-font: 'Concert One', 'Robot Mono', monospace;
+  --font-color: #dddddd;
+  --timer-background-color: #000000;
+  --timer-border: 0px solid #FFFFFF;
+  --timer-height: 70%;
+  --timer-width: 70%;
+  --button-border: 3px solid #FFFFFF;
+  --button-text-size: 2.5em;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body, div, p{
+  margin: 0;
+  padding: 0;
+  background-color: var(--timer-background-color);
+  font: var(--main-font);
+}
+
+@media screen and (max-width: 1024px){
+  :root{
+    --timer-height: 80%;
+    --timer-width: 80%;
+    --button-text-size: 3em;
+  }
 }

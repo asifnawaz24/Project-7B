@@ -1,0 +1,22 @@
+input {
+    background-color: var(--timer-background-color);
+    color: var(--font-color);
+    width: 1em;
+    height: 1em;
+    line-height: 0;
+    border: none;
+    font-size: inherit;
+    font: var(--main-font);
+    margin: -3px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

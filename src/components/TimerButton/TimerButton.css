@@ -1,0 +1,16 @@
+.button-container{
+    flex: 1 1 auto;
+    margin: 5px 20px;
+    padding: 15px 10px;
+    text-align: center;
+    border: var(--button-border);
+    font-size: var(--button-text-size);
+    height: max-content;
+}
+
+.button-container:hover {
+    cursor: pointer;
+    filter: invert(100%);
+    border-color: #000000;
+    transition: all 150ms ease-in;
+}

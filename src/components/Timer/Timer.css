@@ -1,0 +1,70 @@
+.timer-container{
+    font-family: var(--main-font);
+    background-color: var(--timer-background-color);
+    border: var(--timer-border);
+    height: var(--timer-height);
+    width: var(--timer-width);
+    color: var(--font-color);
+}
+
+/* .timer-display{
+    height: 50vh;
+} */
+
+.timer-display, .timer-display-2{
+    height: 70%;
+    font-size: 5em;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    flex-direction: row;
+    align-items: center;
+}
+
+.timer-alert-display {
+    animation: alert 500ms linear infinite alternate;
+}
+
+.start-timer:hover {
+    filter: none;
+    color: var(--timer-background-color);
+    background-color: #2ecc71;
+    border-color: #2ecc71;
+    transition: all 150ms ease-in;
+}
+
+.stop-timer:hover {
+    filter: none;
+    color: var(--timer-background-color);
+    background-color: #c0392b;
+    border-color: #c0392b;
+    transition: all 150ms ease-in;
+}
+
+.timer-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 30%;
+}
+
+@keyframes alert{
+    25%{
+        color: var(--font-color);
+    }
+    50%{
+        color: red;
+    }
+    75%{
+        color: var(--font-color);
+    }
+    100% {
+        color: red;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .timer-button-container{
+        flex-direction: column;
+    }
+}
